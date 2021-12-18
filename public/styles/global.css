@@ -1,0 +1,209 @@
+/*-- Resets--*/
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html {
+  /*--Colors--*/
+  --black: #0d114f;
+  --white: #fafafa;
+  --light-blue: #e0ecff;
+  --blue: #3485ff;
+  --red: #e83f5b;
+  --overlay: #040911;
+  --background: #fbfcff;
+  --icons-details: #a5b0c1;
+
+  --grey-dark: #4d5e77;
+  --grey-blue: #a1b2cd;
+  --grey-medium: #d3d9e2;
+  --grey-light: #e5eaf1;
+  --grey-medium: #eaecf1;
+
+  --hover-blue: #5699ff;
+  --hover-red: #ea4b65;
+  --hover-grey: #eaeff5;
+}
+
+/*--Body Frame--*/
+body {
+  display: flex;
+  height: 100vh;
+  background: var(--background);
+}
+
+body,
+button,
+input,
+textarea {
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
+}
+
+/* -- Header -- */
+header {
+  grid-area: header;
+}
+
+.content {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.sr-only {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.logo {
+  display: flexbox;
+  margin-top: 4.27vh;
+  margin-left: 19.51vh;
+}
+
+.title {
+  font: 700 clamp(1.4rem, 4.5vw, 1.75rem) 'Poppins', sans-serif;
+  color: var(--black);
+  margin-bottom: 2.93vh;
+}
+
+/* BUTTONS */
+
+.button-01 {
+  border-radius: 0.5rem;
+  height: 5.85vh;
+  width: 100%;
+  background: var(--blue);
+  font: 500 clamp(0.8rem, 2.57vw, 1rem) 'Poppins', sans-serif;
+  line-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  color: var(--white);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.button-01:hover {
+  background-color: var(--hover-blue);
+}
+
+.button-02 {
+  border: 0.125rem solid var(--blue);
+  border-radius: 0.5rem;
+  height: 5.85vh;
+  width: 100%;
+  font: 500 clamp(0.8rem, 2.57vw, 1rem) 'Poppins', sans-serif;
+  line-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  color: var(--blue);
+  cursor: pointer;
+}
+
+.button-03 {
+  border: 0.125rem solid var(--blue);
+  border-radius: 0.5rem;
+  height: 5.85vh;
+  min-width: 8.37rem;
+  font: 500 clamp(0.8rem, 2.57vw, 1rem) 'Poppins', sans-serif;
+  line-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  color: var(--blue);
+  cursor: pointer;
+}
+
+.button-04 {
+  border-radius: 0.5rem;
+  height: 5.85vh;
+  min-width: 10.81rem;
+  background: var(--blue);
+  font: 500 clamp(0.8rem, 2.57vw, 1rem) 'Poppins', sans-serif;
+  line-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  color: var(--white);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.button-04:hover {
+  background-color: var(--hover-blue);
+}
+
+.button-05 {
+  border-radius: 0.5rem;
+  height: 4.88vh;
+  width: 6.8vw;
+  background: var(--blue);
+  font: 500 clamp(0.8rem, 2.57vw, 1rem) 'Poppins', sans-serif;
+  line-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.button-05:hover {
+  background-color: var(--hover-blue);
+}
+
+.button-cancelar-exclusao {
+  border-radius: 0.5rem;
+  height: 6.1vh;
+  width: 9.65vw;
+  background: var(--grey-light);
+  font: 500 clamp(0.8rem, 1.95vw, 1rem) 'Poppins', sans-serif;
+  line-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--grey-dark);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.button-cancelar-exclusao:hover {
+  background-color: var(--hover-grey);
+}
+
+.button-confirmar-exclusao {
+  border-radius: 0.5rem;
+  height: 6.1vh;
+  width: 10.76vw;
+  background: var(--red);
+  font: 500 clamp(0.8rem, 1.95vw, 1rem) 'Poppins', sans-serif;
+  line-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.button-confirmar-exclusao:hover {
+  background-color: var(--hover-red);
+}

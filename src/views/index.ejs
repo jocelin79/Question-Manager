@@ -1,0 +1,34 @@
+<!DOCTYPE html> 
+  <head>
+    <title> Rocket.Q - Home</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- View Port -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--CSS-->
+    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="/styles/home.css">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+    <div class="content" id="home">
+      <header>
+        <a href="/"><img class="logo" src="/images/logo-alt.png" alt="Rocket.Q Logo"></a>
+      </header>
+      <div id="bg">
+        <div class="home-bg">
+          <img src="/images/home-bg-img-alt.png" alt="">
+        </div>
+      </div>
+      <main>
+        <!-- Tal parte renderizará a partir da url -->
+        <%- include(`parts/${page}`)  %>
+      </main>
+    </div>
+    <img class="ball-top" src="/images/Circle-Top.png" alt="">
+    <img class="ball-bottom" src="/images/Circle-Bottom.png" alt="">
+  </body>
+</html>
